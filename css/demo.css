@@ -127,7 +127,7 @@ a:focus {
 
 /* Content */
 .content {
-	padding: 3em 0;
+	padding: 5em 0;
 }
 
 /* Related demos */
@@ -168,4 +168,45 @@ a:focus {
 		width: 100%;
 		margin: 1em 0 0;
 	}
+}
+/* The new code is here */
+
+@font-face {
+    font-family:font;
+    src: url("../fonts/SF Fedora Titles Shadow.ttf");
+}
+.text-effect {
+    position: relative;
+    color:#3CB371;
+    font-size:3em;
+    font-family:font;
+    font-weight: 700;
+		margin-top:50px;
+		margin-bottom:50px;
+    animation-name: example;
+    animation-duration:6s;
+    animation-timing-function: ease-in-out;
+}
+.div-effect{
+	border-top:2px solid #3CB371;
+	border-bottom:2px solid #3CB371;
+	width:700px;
+	position: absolute;
+	left:25%;
+	animation-name: example2;
+	animation-duration:6s;
+	animation-timing-function: ease-in-out;
+}
+@keyframes example {
+    0%   {color:#3CB371; left:0px;}
+    50%  {color:#00FA9A; left:200px;}
+    100% {color:#3CB371 ; left:0px;}
+}
+@keyframes example2 {
+    0%   {border-top:2px solid #3CB371;
+					border-bottom:2px solid #3CB371;}
+    50%  {border-top:2px solid #00FA9A;
+					border-bottom:2px solid #00FA9A;}
+    100% {border-top:2px solid #3CB371;
+					border-bottom:2px solid #3CB371;}
 }
