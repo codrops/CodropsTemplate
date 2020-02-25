@@ -29,7 +29,7 @@ Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www
 ## License
 [MIT](LICENSE)
 
-[Made with :blue_heart:](http://www.codrops.com)
+Made with :blue_heart: by [Codrops](http://www.codrops.com)
 
 
 
