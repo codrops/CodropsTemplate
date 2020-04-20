@@ -69,13 +69,6 @@ a:focus {
 	outline: none;
 }
 
-.message {
-	background: var(--color-text);
-	color: var(--color-bg);
-	padding: 1rem;
-	text-align: center;
-}
-
 .frame {
 	padding: 3rem 5vw;
 	text-align: center;
@@ -118,9 +111,6 @@ a:focus {
 }
 
 @media screen and (min-width: 53em) {
-	.message {
-		display: none;
-	}
 	.frame {
 		position: fixed;
 		text-align: left;
