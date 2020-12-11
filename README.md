@@ -10,7 +10,7 @@
 
 *Description*, *author*
 
-![Image Title](link)
+![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
