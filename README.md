@@ -5,10 +5,11 @@
 - For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
 - Delete this 'how to' in the final version and leave the following (fill in title/description, credits and social links, we'll do the rest):
 
+-------
 
 # The Title
 
-*Description*, *author*
+*A description of the demo goes here.*
 
 ![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
@@ -39,7 +40,7 @@ npm run build
 
 ## Credits
 
-*third party resources*
+- *third party resources*
 
 ## Misc
 
