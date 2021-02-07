@@ -5,12 +5,13 @@
 - For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
 - Delete this 'how to' in the final version and leave the following (fill in title/description, credits and social links, we'll do the rest):
 
+-------
 
 # The Title
 
-*Description*, *author*
+*A description of the demo goes here.*
 
-![Image Title](link)
+![Image Title](https://generative-placeholders.glitch.me/image?width=800&height=600")
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
@@ -39,7 +40,7 @@ npm run build
 
 ## Credits
 
-*third party resources*
+- *third party resources*
 
 ## Misc
 
@@ -50,7 +51,7 @@ Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www
 ## License
 [MIT](LICENSE)
 
-Made with :blue_heart: by [Codrops](http://www.codrops.com)
+Made with :blue_heart:  by [Codrops](http://www.codrops.com)
 
 
 
