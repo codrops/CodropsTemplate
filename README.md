@@ -40,7 +40,7 @@ npm run build
 
 ## Credits
 
-- *third party resources*
+- Images from [Unsplash](https://unsplash.com/)
 
 ## Misc
 
