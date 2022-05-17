@@ -180,7 +180,6 @@ a:focus-visible {
 	.frame__title {
 		grid-area: title;
 		justify-content: flex-start;
-		color: var(--color-text-alt);
 	}
 	.frame__demos {
 		margin: 0;
