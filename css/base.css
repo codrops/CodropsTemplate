@@ -131,7 +131,12 @@ a:focus-visible {
 }
 
 .frame__title-back svg {
-	fill: #fff;
+	fill: var(--color-link);
+}
+
+.frame__title-back:hover svg,
+.frame__title-back:focus svg {
+	fill: var(--color-link-hover);
 }
 
 .frame__demos a:not(:last-child) {
