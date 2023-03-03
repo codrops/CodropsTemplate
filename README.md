@@ -3,7 +3,7 @@
 - Styles for the demo go in css/base.css
 - Add build instructions and credits to the README.md
 - For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links, we'll do the rest):
+- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links of your likings, we'll do the rest):
 
 -------
 
@@ -44,7 +44,7 @@ npm run build
 
 ## Misc
 
-Follow *Author*: [Twitter](), [Dribbble](), [Google+](), [GitHub]() 
+Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
 
 Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
