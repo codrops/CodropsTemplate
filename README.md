@@ -17,30 +17,13 @@
 
 [Demo](http://tympanus.net/Development/.../)
 
-
 ## Installation
 
-Install dependencies:
-
-```
-npm install
-```
-
-Compile the code for development and start a local server:
-
-```
-npm start
-```
-
-Create the build:
-
-```
-npm run build
-```
+Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
 
 ## Credits
 
-- Images from [Unsplash](https://unsplash.com/)
+- Images generated with [Midjourney](https://midjourney.com)
 
 ## Misc
 
