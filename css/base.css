@@ -201,7 +201,6 @@ body #cdawrap {
 		align-content: space-between;
 		justify-items: start;
 		grid-gap: 2rem;
-		padding: 0.75rem;
 	}
 	.frame__demos {
 		justify-self: end;
