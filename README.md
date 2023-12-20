@@ -7,7 +7,7 @@
 
 -------
 
-# The Title
+# The Title of the Demo
 
 *A description of the demo goes here.*
 
