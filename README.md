@@ -7,7 +7,7 @@
 
 -------
 
-# The Title of the Demo
+# Title of the demo
 
 *A description of the demo goes here.*
 
@@ -29,7 +29,9 @@ Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn
 
 Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
 
-Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+
+[Become a patron](https://www.patreon.com/codrops)
 
 ## License
 [MIT](LICENSE)
