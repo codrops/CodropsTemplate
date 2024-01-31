@@ -31,7 +31,7 @@ Follow *Author*: [Twitter](), [Instagram](), [GitHub]()
 
 Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
-[Become a patron](https://www.patreon.com/codrops)
+[Support us on patron](https://www.patreon.com/codrops)
 
 ## License
 [MIT](LICENSE)
