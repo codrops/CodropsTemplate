@@ -118,7 +118,7 @@ a:focus-visible {
 	pointer-events: none;
 	justify-items: start;
 	grid-template-columns: auto auto;
-	grid-template-areas: 'title' 'prev' 'back' 'sub' 'sponsor' 'demos';
+	grid-template-areas: 'title' 'archive' 'back' 'sub' 'sponsor' 'demos' 'tags' 'hire';
 }
 
 .frame #cdawrap {
@@ -140,13 +140,21 @@ a:focus-visible {
   justify-self: start;
 }
 
-.frame__prev {
-  grid-area: prev;
+.frame__archive {
+  grid-area: archive;
   justify-self: start;
 }
 
 .frame__sub {
   grid-area: sub;
+}
+
+.frame__tags {
+  grid-area: tags;
+}
+
+.frame__hire {
+  grid-area: hire;
 }
 
 .frame__demos {
@@ -176,7 +184,7 @@ a:focus-visible {
 		grid-template-columns: auto auto auto 1fr;
 		grid-template-rows: auto auto;
 		align-content: space-between;
-		grid-template-areas: 'title back prev sponsor' 'demos demos demos sub';
+		grid-template-areas: 'title back archive sponsors' 'tags demos hire sub';
 	}
 	.frame #cdawrap, .frame__sub {
 		justify-self: end;
