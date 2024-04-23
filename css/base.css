@@ -118,7 +118,7 @@ a:focus-visible {
 	pointer-events: none;
 	justify-items: start;
 	grid-template-columns: auto auto;
-	grid-template-areas: 'title' 'archive' 'back' 'sub' 'sponsor' 'demos' 'tags' 'hire';
+	grid-template-areas: 'title' 'archive' 'back' 'github' 'sub' 'sponsor' 'demos' 'tags' 'hire';
 }
 
 .frame #cdawrap {
@@ -147,6 +147,10 @@ a:focus-visible {
 
 .frame__sub {
   grid-area: sub;
+}
+
+.frame__github {
+  grid-area: github;
 }
 
 .frame__tags {
@@ -181,10 +185,10 @@ a:focus-visible {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		grid-template-columns: auto auto auto 1fr;
+		grid-template-columns: auto auto auto auto 1fr;
 		grid-template-rows: auto auto;
 		align-content: space-between;
-		grid-template-areas: 'title back archive sponsors' 'tags demos hire sub';
+		grid-template-areas: 'title back archive github sponsor' 'tags demos demos hire sub';
 	}
 	.frame #cdawrap, .frame__sub {
 		justify-self: end;

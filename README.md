@@ -31,8 +31,6 @@ Follow *Author*: [Twitter](), [Instagram](), [GitHub]()
 
 Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
-[Support us](https://www.buymeacoffee.com/codrops)
-
 ## License
 [MIT](LICENSE)
 
