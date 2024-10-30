@@ -15,7 +15,7 @@
 
 [Article on Codrops](https://tympanus.net/codrops/?p=)
 
-[Demo](http://tympanus.net/Development/.../)
+[Demo](https://tympanus.net/Development/.../)
 
 ## Installation
 
@@ -29,7 +29,7 @@ Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn
 
 Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
 
-Follow Codrops: [X](http://www.X.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+Follow Codrops: [Bluesky](https://bsky.app/profile/codrops.bsky.social), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/), [X](http://www.x.com/codrops)
 
 ## License
 [MIT](LICENSE)

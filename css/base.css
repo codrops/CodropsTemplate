@@ -6,10 +6,10 @@
 
 :root {
 	font-size: 16px;
-	--color-text: #111;
-	--color-bg: #fff;
-	--color-link: #aaa;
-	--color-link-hover: #000;
+	--color-text: #fff;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
 	--page-padding: 1.5rem;
 }
 
@@ -118,7 +118,7 @@ a:focus-visible {
 	pointer-events: none;
 	justify-items: start;
 	grid-template-columns: auto auto;
-	grid-template-areas: 'title' 'archive' 'back' 'github' 'sub' 'sponsor' 'demos' 'tags' 'hire';
+	grid-template-areas: 'title' 'archive' 'back' 'github' 'sponsor' 'demos' 'tags';
 }
 
 .frame #cdawrap {
@@ -145,20 +145,12 @@ a:focus-visible {
   justify-self: start;
 }
 
-.frame__sub {
-  grid-area: sub;
-}
-
 .frame__github {
   grid-area: github;
 }
 
 .frame__tags {
   grid-area: tags;
-}
-
-.frame__hire {
-  grid-area: hire;
 }
 
 .frame__demos {
@@ -188,7 +180,7 @@ a:focus-visible {
 		grid-template-columns: auto auto auto auto 1fr;
 		grid-template-rows: auto auto;
 		align-content: space-between;
-		grid-template-areas: 'title back archive github sponsor' 'tags demos demos hire sub';
+		grid-template-areas: 'title back archive github sponsor' 'tags tags demos demos demos';
 	}
 	.frame #cdawrap, .frame__sub {
 		justify-self: end;
