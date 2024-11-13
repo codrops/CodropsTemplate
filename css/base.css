@@ -105,26 +105,23 @@ a:focus-visible {
 
 .frame {
   padding: 3rem var(--page-padding) 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
   display: grid;
   z-index: 1000;
+  position: relative;
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
   pointer-events: none;
   justify-items: start;
   grid-template-columns: auto auto;
-  grid-template-areas: 'title' 'back' 'archive' 'github' 'demos' 'sponsor' 'tags';
+  grid-template-areas: 'title' 'back' 'archive' 'github' 'demos' 'tags' 'sponsor';
 }
 
 .frame #cdawrap {
   justify-self: start;
+  grid-area: sponsor;
 }
 
-.frame a {
+.frame a, .frame button {
   pointer-events: auto;
 }
 
@@ -177,15 +174,23 @@ a:focus-visible {
   .frame {
     padding: var(--page-padding);
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     grid-template-columns: auto auto auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
     grid-template-areas: 'title back github archive demos' 'tags tags tags sponsor sponsor';
   }
+  .frame__tags {
+    align-self: end;
+  }
   .frame__demos,
   .frame #cdawrap {
     justify-self: end;
-    text-align: right
+    text-align: right;
+    max-width: 300px;
   }
   .content {
 		min-height: 100vh;
