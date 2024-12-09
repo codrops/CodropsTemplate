@@ -22,49 +22,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Page Loader */
-.js .loading::before,
-.js .loading::after {
-  content: '';
-  position: fixed;
-  z-index: 10000;
-}
+@media (scripting: enabled) {
+  .loading {
+    &::before,
+    &::after {
+      content: '';
+      position: fixed;
+      z-index: 10000;
+    }
 
-.js .loading::before {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-bg);
-}
+    &::before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--color-bg);
+    }
 
-.js .loading::after {
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 1px;
-  margin: 0 0 0 -50px;
-  background: var(--color-link);
-  animation: loaderAnim 1.5s ease-in-out infinite alternate forwards;
+    &::after {
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 1px;
+      margin: 0 0 0 -50px;
+      background: var(--color-link);
+      animation: loaderAnim 1.5s ease-in-out infinite alternate forwards;
+    }
 
-}
-
-@keyframes loaderAnim {
-  0% {
-    transform: scaleX(0);
-    transform-origin: 0% 50%;
-  }
-  50% {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
-  }
-  50.1% {
-    transform: scaleX(1);
-    transform-origin: 100% 50%;
-  }
-  100% {
-    transform: scaleX(0);
-    transform-origin: 100% 50%;
+    @keyframes loaderAnim {
+      0% {
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+      }
+      50% {
+        transform: scaleX(1);
+        transform-origin: 0% 50%;
+      }
+      50.1% {
+        transform: scaleX(1);
+        transform-origin: 100% 50%;
+      }
+      100% {
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+      }
+    }
   }
 }
 
@@ -73,34 +75,25 @@ a {
   color: var(--color-link);
   outline: none;
   cursor: pointer;
-}
 
-a:hover {
-  text-decoration: underline;
-  color: var(--color-link-hover);
-  outline: none;
-}
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-link-hover);
+  }
 
-/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
-a:focus {
-  /* Provide a fallback style for browsers
-   that don't support :focus-visible */
-  outline: none;
-  background: lightgrey;
-}
+  &:focus {
+    outline: none;
+    background: lightgrey;
 
-a:focus:not(:focus-visible) {
-  /* Remove the focus indicator on mouse-focus for browsers
-   that do support :focus-visible */
-  background: transparent;
-}
+    &:not(:focus-visible) {
+      background: transparent;
+    }
 
-a:focus-visible {
-  /* Draw a very noticeable focus style for
-   keyboard-focus on browsers that do support
-   :focus-visible */
-  outline: 2px solid red;
-  background: transparent;
+    &:focus-visible {
+      outline: 2px solid red;
+      background: transparent;
+    }
+  }
 }
 
 .frame {
@@ -113,65 +106,60 @@ a:focus-visible {
   pointer-events: none;
   justify-items: start;
   grid-template-columns: auto auto;
-  grid-template-areas: 'title' 'back' 'archive' 'github' 'demos' 'tags' 'sponsor';
-}
+  grid-template-areas:
+    'title'
+    'back'
+    'archive'
+    'github'
+    'demos'
+    'tags'
+    'sponsor';
 
-.frame #cdawrap {
-  justify-self: start;
-  grid-area: sponsor;
-}
-
-.frame a, .frame button {
-  pointer-events: auto;
-}
-
-.frame__title {
-  grid-area: title;
-  font-size: inherit;
-  margin: 0;
-}
-
-.frame__back {
-  grid-area: back;
-  justify-self: start;
-}
-
-.frame__archive {
-  grid-area: archive;
-  justify-self: start;
-}
-
-.frame__github {
-  grid-area: github;
-}
-
-.frame__tags {
-  grid-area: tags;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-} 
-
-.frame__demos {
-	grid-area: demos;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-
-.content {
-	padding: var(--page-padding);
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	position: relative;
-}
-
-@media screen and (min-width: 53em) {
-  body {
-    --page-padding: 2rem 3rem;
+  #cdawrap {
+    justify-self: start;
+    grid-area: sponsor;
   }
-  .frame {
+
+  a,
+  button {
+    pointer-events: auto;
+  }
+
+  .frame__title {
+    grid-area: title;
+    font-size: inherit;
+    margin: 0;
+  }
+
+  .frame__back {
+    grid-area: back;
+    justify-self: start;
+  }
+
+  .frame__archive {
+    grid-area: archive;
+    justify-self: start;
+  }
+
+  .frame__github {
+    grid-area: github;
+  }
+
+  .frame__tags {
+    grid-area: tags;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .frame__demos {
+    grid-area: demos;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: 53em) {
     padding: var(--page-padding);
     height: 100%;
     position: fixed;
@@ -181,20 +169,33 @@ a:focus-visible {
     grid-template-columns: auto auto auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
-    grid-template-areas: 'title back github archive demos' 'tags tags tags sponsor sponsor';
+    grid-template-areas:
+      'title back github archive demos'
+      'tags tags tags sponsor sponsor';
+
+    .frame__tags {
+      align-self: end;
+    }
+
+    .frame__demos,
+    #cdawrap {
+      justify-self: end;
+      text-align: right;
+      max-width: 300px;
+    }
   }
-  .frame__tags {
-    align-self: end;
+}
+
+.content {
+  padding: var(--page-padding);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+
+  @media screen and (min-width: 53em) {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
-  .frame__demos,
-  .frame #cdawrap {
-    justify-self: end;
-    text-align: right;
-    max-width: 300px;
-  }
-  .content {
-		min-height: 100vh;
-		justify-content: center;
-		align-items: center;
-	}
 }
