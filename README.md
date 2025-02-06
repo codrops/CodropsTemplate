@@ -34,9 +34,3 @@ Follow Codrops: [Bluesky](https://bsky.app/profile/codrops.bsky.social), [Facebo
 ## License
 [MIT](LICENSE)
 
-Made with :blue_heart:  by [Codrops](http://www.codrops.com)
-
-
-
-
-
