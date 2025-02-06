@@ -27,7 +27,7 @@ Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn
 
 ## Misc
 
-Follow *Author*: [Twitter](), [Instagram](), [GitHub]() 
+Follow *Author*: [Twitter](), [Instagram](), [GitHub]() ...
 
 Follow Codrops: [Bluesky](https://bsky.app/profile/codrops.bsky.social), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/), [X](http://www.x.com/codrops)
 
