@@ -24,7 +24,6 @@ body {
 
 @media (scripting: enabled) {
   .loading {
-
     &::before,
     &::after {
       content: '';
@@ -109,15 +108,13 @@ a {
   grid-column-gap: 2rem;
   pointer-events: none;
   justify-items: start;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto 1fr;
   grid-template-areas:
-    'title'
-    'back'
-    'archive'
-    'github'
-    'demos'
-    'tags'
-    'sponsor';
+    'title title title title'
+    'back archive github ...'
+    'demos demos demos demos'
+    'tags tags tags tags'
+    'sponsor sponsor sponsor sponsor';
 
   #cdawrap {
     justify-self: start;
