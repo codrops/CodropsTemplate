@@ -1,9 +1,9 @@
 _How to use this template:_
 
 - Styles for the demo go in css/base.css
-- Add build instructions and credits to the README.md
+- Add build instructions and credits to the README.md under "Installation"
 - For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
-- Delete this 'how to' intro in the final version and leave the following (fill in title/description, credits and social links of your likings, we'll do the rest):
+- Delete this 'how to' intro in the final version. We'll fill in the details.
 
 ---
 
@@ -21,15 +21,22 @@ _A description of the demo goes here._
 
 Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
 
+or
+
+```bash
+npm install
+npm run dev
+```
+
 ## Credits
 
-- Images generated with [Midjourney](https://midjourney.com)
+- Add credits here. Inspiration, tools used etc.
 
 ## Misc
 
-Follow _Author_: [Twitter](), [Instagram](), [GitHub]() ...
+Follow _Your Name_: [X](), [LinkedIn](), [Instagram](), [GitHub]()
 
-Follow Codrops: [X](http://www.x.com/codrops), [Facebook](https://www.facebook.com/codrops), [Instagram](https://www.instagram.com/codropsss/), [LinkedIn](https://www.linkedin.com/company/codrops/), [GitHub](https://github.com/codrops)
+Follow Codrops: [X](http://www.x.com/codrops), [LinkedIn](https://www.linkedin.com/company/codrops/), [Instagram](https://www.instagram.com/codropsss/), [Facebook](https://www.facebook.com/codrops), [GitHub](https://github.com/codrops)
 
 ## License
 

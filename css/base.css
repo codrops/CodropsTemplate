@@ -17,7 +17,18 @@ body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: ui-monospace, monospace;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -100,21 +111,20 @@ a {
 }
 
 .frame {
-  padding: 3rem var(--page-padding) 0;
+  padding: var(--page-padding);
   display: grid;
   z-index: 1000;
   position: relative;
-  grid-row-gap: 1rem;
-  grid-column-gap: 2rem;
+  gap: 1rem;
   pointer-events: none;
   justify-items: start;
-  grid-template-columns: auto auto auto 1fr;
+  grid-template-columns: 100%;
   grid-template-areas:
-    'title title title title'
-    'back archive github ...'
-    'demos demos demos demos'
-    'tags tags tags tags'
-    'sponsor sponsor sponsor sponsor';
+    'title'
+    'links'
+    'demos'
+    'tags'
+    'sponsor';
 
   #cdawrap {
     justify-self: start;
@@ -132,20 +142,6 @@ a {
     margin: 0;
   }
 
-  .frame__back {
-    grid-area: back;
-    justify-self: start;
-  }
-
-  .frame__archive {
-    grid-area: archive;
-    justify-self: start;
-  }
-
-  .frame__github {
-    grid-area: github;
-  }
-
   .frame__tags {
     grid-area: tags;
     display: flex;
@@ -153,26 +149,33 @@ a {
     gap: 1rem;
   }
 
+  .frame__links,
   .frame__demos {
-    grid-area: demos;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
   }
 
+  .frame__links {
+    grid-area: links;
+  }
+
+  .frame__demos {
+    grid-area: demos;
+  }
+
   @media screen and (min-width: 53em) {
-    padding: var(--page-padding);
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    grid-template-columns: auto auto auto auto 1fr;
+    grid-template-columns: auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
     grid-template-areas:
-      'title back github archive demos'
-      'tags tags tags sponsor sponsor';
+      'title links demos'
+      'tags tags sponsor';
 
     .frame__tags {
       align-self: end;
