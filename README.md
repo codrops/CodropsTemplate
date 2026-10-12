@@ -1,6 +1,7 @@
 _How to use this template:_
 
 - Styles for the demo go in css/base.css
+- Fill in the social preview (Open Graph) tags in index.html and add an og-image.jpg (1200x630) next to it
 - Add build instructions and credits to the README.md under "Installation"
 - For writing the tutorial, take a look at https://github.com/crnacura/CodropsTemplate/wiki/Writing-the-article
 - Delete this 'how to' intro in the final version. We'll fill in the details.
