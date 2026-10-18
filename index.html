@@ -4,27 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--
+    Use the same title in <title>, og:title and twitter:title,
+    and the same description (the article's excerpt) in all three description tags.
+  -->
   <title>Demoname | Demo 1 | Codrops</title>
   <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- Social preview: absolute URLs, image 1200x630 -->
+  <!--
+    Use the folder the demo will live in (/Demos/ or /Tutorials/), with absolute URLs.
+    For variations (index2.html, ...), point canonical and og:url to that page.
+  -->
+  <link rel="canonical" href="https://tympanus.net/Demos/Demoname/" />
+  <meta name="theme-color" content="#000" />
+  <!-- Social preview: absolute URLs, image 1200x630 (in a Vite project, put og-image.jpg in public/) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Codrops" />
-  <meta property="og:title" content="Demoname | Codrops" />
+  <meta property="og:title" content="Demoname | Demo 1 | Codrops" />
   <meta property="og:description" content="" />
   <meta property="og:url" content="https://tympanus.net/Demos/Demoname/" />
   <meta property="og:image" content="https://tympanus.net/Demos/Demoname/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@codrops" />
-  <meta name="twitter:title" content="Demoname | Codrops" />
+  <meta name="twitter:creator" content="@authorhandle" />
+  <meta name="twitter:title" content="Demoname | Demo 1 | Codrops" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="https://tympanus.net/Demos/Demoname/og-image.jpg" />
+  <meta name="twitter:image:alt" content="" />
   <link rel="icon" type="image/svg+xml" href="https://tympanus.net/favicon/favicon.svg" />
   <link rel="shortcut icon" href="https://tympanus.net/favicon/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/base.css" />
   <script>document.documentElement.className = 'js';</script>
+  <!-- Added on the live server only, leave commented out in the repo -->
   <!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
 </head>
 
@@ -32,18 +45,18 @@
   <main>
     <header class="frame">
       <h1 class="frame__title">The Title</h1>
-      <nav class="frame__links">
+      <nav class="frame__links" aria-label="Demo links">
         <a href="https://tympanus.net/codrops/?p=">Article</a>
         <a href="https://tympanus.net/codrops/hub/">All demos</a>
         <a href="https://github.com/codrops/">GitHub</a>
       </nav>
-      <nav class="frame__tags">
+      <nav class="frame__tags" aria-label="Tags">
         <a href="https://tympanus.net/codrops/hub/tag/scroll/">#scroll</a>
         <a href="https://tympanus.net/codrops/hub/tag/three-js/">#three.js</a>
         <a href="https://tympanus.net/codrops/hub/tag/webgl/">#webgl</a>
       </nav>
-      <nav class="frame__demos">
-        <span>Variation 1</span>
+      <nav class="frame__demos" aria-label="Variations">
+        <span aria-current="page">Variation 1</span>
         <a href="index2.html">Variation 2</a>
         <a href="index3.html">Variation 3</a>
       </nav>
@@ -52,6 +65,7 @@
       <h2>The Content</h2>
     </div>
   </main>
+  <!-- Added on the live server only, leave commented out in the repo -->
   <!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
 </body>
 
