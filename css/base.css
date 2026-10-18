@@ -5,7 +5,8 @@
 }
 
 :root {
-  font-size: 12px;
+  /* 12px at the browser default, still scales with the visitor's font size setting */
+  font-size: 75%;
   --color-text: #fff;
   --color-bg: #000;
   --color-link: #fff;
@@ -33,6 +34,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Add the class "loading" to the body and remove it with JS once assets are ready */
 @media (scripting: enabled) {
   .loading {
     &::before,
@@ -62,6 +64,12 @@ body {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .loading::after {
+    animation: none;
+  }
+}
+
 @keyframes loaderAnim {
   0% {
     transform: scaleX(0);
@@ -87,7 +95,6 @@ body {
 a {
   text-decoration: none;
   color: var(--color-link);
-  outline: none;
   cursor: pointer;
 
   &:hover {
@@ -95,18 +102,8 @@ a {
     color: var(--color-link-hover);
   }
 
-  &:focus {
-    outline: none;
-    background: lightgrey;
-
-    &:not(:focus-visible) {
-      background: transparent;
-    }
-
-    &:focus-visible {
-      outline: 2px solid red;
-      background: transparent;
-    }
+  &:focus-visible {
+    outline: 2px solid red;
   }
 }
 
@@ -194,7 +191,7 @@ a {
   padding: var(--page-padding);
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   position: relative;
 
   @media screen and (min-width: 53em) {
